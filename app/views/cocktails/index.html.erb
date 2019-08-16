@@ -1,14 +1,10 @@
+<div class="text-center pt-5">
 <h1>Cocktails</h1>
 
-  <tbody>
+    <ul>
     <% @cocktails.each do |cocktail| %>
-      <tr>
-        <td><%= cocktail.name %></td>
-        <td><%= link_to 'Show', cocktail %></td>
-        <td><%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <li><%= cocktail.name %>
+        <%= link_to 'Show', cocktail %>
+        <%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></li>
     <% end %>
-  </tbody>
-
-
-<%= link_to 'Add a cocktail', new_cocktail_path %>
+</div>
