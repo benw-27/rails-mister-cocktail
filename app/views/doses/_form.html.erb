@@ -1,0 +1,22 @@
+
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <% if @dose.errors.any? %>
+    <div class="errors">
+      <% @dose.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="form-inputs">
+    <%= f.input :description %>
+  </div>
+
+    <div class="form-inputs">
+    <%= f.association :ingredient %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
