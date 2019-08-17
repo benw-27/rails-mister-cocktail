@@ -2,9 +2,12 @@
 <p>
   <strong>Name:</strong>
   <%= @cocktail.name %>
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 </p>
 <p><% @cocktail.doses.each do |dose| %></p>
  <p><%= dose.ingredient.name%>: <%=dose.description %></p>
+
+
 
 <% end %>
 

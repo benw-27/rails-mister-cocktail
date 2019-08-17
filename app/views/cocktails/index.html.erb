@@ -18,4 +18,11 @@
         <%= link_to 'Show', cocktail %>
         <%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></li>
     <% end %>
+
+    <%= cl_image_tag("vnp1078rrmbalgh2nhfj",
+      width: 400, height: 300, crop: :fill) %>
+
+<!-- for face detection -->
+<%= cl_image_tag("tnjrkjb4cydvvpmggmwm",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
 </div>
