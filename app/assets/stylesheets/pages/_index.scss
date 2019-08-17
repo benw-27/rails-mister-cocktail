@@ -1,2 +1,14 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.oswald-font {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 26px;
+}
+
+div.sticky {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}

@@ -1,1 +1,13 @@
 // Specific CSS for your home-page
+.cocktail-cover {
+  background-image: url('http://ipicturee.com/wp-content/uploads/2013/12/cocktail-splash-1920-1080-7955.jpg');
+  box-shadow: inset 0 0 0 1000px rgba(143,95,135,.37);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-bottom: 0px;
+}
+
+.nav-color {
+  background-color: rgba(44,30,42,1);
+}
