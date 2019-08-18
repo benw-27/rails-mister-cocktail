@@ -1,44 +1,27 @@
 <div class="cocktail-cover">
   <div class="container">
-
-
+    <h1 class="oswald-font-large pt-5">The menu</h1>
     <div class="sticky col-lg-2 p-0 pb-2">
       <a class="nav-link" href="cocktails"><%= link_to new_cocktail_path, { class: "btn btn-outline-light ml-2 mr-2" } do %>Add a cocktail<% end %></a>
     </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
+
+    <div class="row">
       <% @cocktails.each do |cocktail| %>
-  <!--                <%= cocktail.name %>
-         <%= link_to 'Show', cocktail %>
-          <%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %>
-  -->
-
-          <div class="card m-3 col-lg-3">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-              alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title"><%= cocktail.name %></h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="nav-link" href="cocktails"><%= link_to new_cocktail_path, { class: "btn btn-outline-success ml-2 mr-2" } do %>Delete<% end %></a>
-            </div>
+        <div class="card card-background m-3 col-lg-2">
+          <img class="card-img-top"
+               src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+               alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title"><%= cocktail.name %></h4>
+            <p class="card-text">Some quick example text</p>
+            <a class="nav-link" href="cocktails"><%= link_to new_cocktail_path, { class: "btn btn-outline-success ml-2 mr-2" } do %>Delete<% end %></a>
           </div>
+        </div>
       <% end %>
-
+    </div>
   </div>
 </div>
 
 
 
-
-
-<!--         <%= cl_image_tag("vnp1078rrmbalgh2nhfj",
-          width: 400, height: 300, crop: :fill) %>
-
-    for face detection
-    <%= cl_image_tag("tnjrkjb4cydvvpmggmwm",
-          width: 150, height: 150, crop: :thumb, gravity: :face) %> -->
 
